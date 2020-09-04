@@ -1,11 +1,13 @@
 import React from 'react'
-
+import Navbar from '../../components/navbar'
+import Feed from '../../components/feed'
 
 function home(){
     return(
-        <div>
-            <h1> Home </h1>
-        </div>
+        <section>
+            <Navbar /> 
+            <Feed />           
+        </section>
     );
 }
 
