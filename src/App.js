@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'materialize-css/dist/css/materialize.min.css'
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 import SignUp from './components/pages/signUp'
