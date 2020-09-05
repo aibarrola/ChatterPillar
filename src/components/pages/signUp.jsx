@@ -18,8 +18,8 @@ function Signup(props){
    const handleSubmit = e =>{
     e.preventDefault();
     const user = {
-        firstName : firstName,
-        lastName : lastName,
+        firstname : firstName,
+        lastname : lastName,
         email : email,
         password  : password,
         bio : bio

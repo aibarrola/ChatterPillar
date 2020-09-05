@@ -25,7 +25,7 @@ function Signin(){
                     alert("Incorrect email or password. Try again or continue as guest");
                 }
         })
-        .catch(err => alert("Unable to login"));
+        .catch(err => alert("Incorrect email or password"));
     
     }
 
