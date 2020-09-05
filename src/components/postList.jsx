@@ -9,6 +9,7 @@ function postList(){
                 <h1> Feed </h1>
                 <Post status="I failed my class" name="James" />
                 <Post status="I'm dropping out " name="Angelo" />
+                <Post status="I hate angelo" name="Vinh" />
             </div>
         
         </section>
