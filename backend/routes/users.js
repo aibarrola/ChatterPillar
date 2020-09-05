@@ -1,7 +1,7 @@
 const router = require('express').Router();
 let User = require('../models/user.model');
 
-router.route('/').get((req, res) =>{
+router.route('/').post((req, res) =>{
     const sentEmail = req.body.email;
     User.find({email : sentEmail })
     .then(users => res.json(users))
