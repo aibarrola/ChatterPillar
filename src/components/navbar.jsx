@@ -9,7 +9,7 @@ function navbar(){
                 <a href="/home" class="brand-logo">College Social Network</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="/home">Feed</a></li>
-                    <li><a href="/inbox">Inbox</a></li>
+                    <li><a href="/inbox">Let's Chat</a></li>
                     <li><a href="/logout">Logout</a></li>
                 </ul>
                 </div>
