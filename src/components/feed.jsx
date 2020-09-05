@@ -3,11 +3,13 @@ import PostList from './postList'
 import post from './post';
 import { useState } from "react";
 import axios from 'axios';
+import { useHistory } from "react-router-dom";
 
 
 function Feed(){
 
 const [status,setStatus] = useState("");
+const history = useHistory();
 
 const handlePost = e =>{
     e.preventDefault();
@@ -15,7 +17,6 @@ const handlePost = e =>{
     if(localStorage.getItem('email') == null){
         alert("Unauthorized to post. Please log in");
     }else{
-        console.log("hello");
         const post = {
             firstname: localStorage.getItem('firstName'),
             lastname: localStorage.getItem('lastName'),
@@ -24,9 +25,10 @@ const handlePost = e =>{
 
         axios.post('http://localhost:5000/posts/add',post)
         .then(res => {console.log(res.data);
+            history.go(0);
             })
         .catch(err => alert("Posts unable to be added"));
-       
+      
     }
 
 }
