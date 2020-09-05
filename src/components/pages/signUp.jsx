@@ -4,9 +4,11 @@ import {Link} from 'react-router-dom'
 import M from 'materialize-css'
 import axios from 'axios'
 import { useState } from "react";
+import { useHistory } from "react-router-dom"
 
-function Signup(){
 
+function Signup(props){
+    let history = useHistory();
     const[firstName,setFirstName] = useState("");
     const[lastName, setLastName] = useState("");
     const[password, setPassword] = useState("");
@@ -22,10 +24,15 @@ function Signup(){
         password  : password,
         bio : bio
     }
-
-    console.log(user);
+  
+    axios.post('http://localhost:5000/users/add',user)
+    .then(res => console.log(res.data))
+    .catch(err => alert("Email has been already taken"));
+    
+    history.push("/home")
     }
-
+    
+    
     return(
         <section>
             <h1 className="header1"> College Social Network </h1>
