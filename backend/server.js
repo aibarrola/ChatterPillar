@@ -10,7 +10,7 @@ app.use(express.json());
 
 const http = require('http');
 const socketio = require('socket.io');
-const { addUser, removeUser, getUser, getUsersInRoom } = require('./chat-users');
+const { addUser, removeUser, getUser, getUsersInRoom } = require('./routes/chat-users');
 const server = http.createServer(app);
 const io = socketio(server);
 
