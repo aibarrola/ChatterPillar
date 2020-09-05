@@ -2,7 +2,7 @@ import React from 'react'
 import './signUp.css'
 import {Link} from 'react-router-dom'
 import M from 'materialize-css'
-
+import axios from 'axios'
 
 
 function signup(){
