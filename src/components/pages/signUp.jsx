@@ -26,10 +26,13 @@ function Signup(props){
     }
   
     axios.post('http://localhost:5000/users/add',user)
-    .then(res => console.log(res.data))
+    .then(res => console.log(res.data), history.push({ 
+        pathname: '/home',
+        email: email 
+       }))
     .catch(err => alert("Email has been already taken"));
     
-    history.push("/home")
+   
     }
     
     
