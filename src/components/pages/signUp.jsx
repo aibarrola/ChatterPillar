@@ -6,6 +6,28 @@ import M from 'materialize-css'
 
 
 function signup(){
+
+    // const SignUp = ({history}) => {
+    //     const handleSignUp = useCallback(
+    //         async event => {
+    //             event.preventDefault();
+    //             const {f_name, l_name, email, password} = event.target.elements;
+    //             try{
+    //                 await app
+    //                 .auth()
+    //                 .createUserWithEmailAndPassword(email.value, password.value).then(
+    //                     (res) => {
+    //                         console.log(res.user)
+    //                     }
+    //                 );
+    //                 history.push("/home");
+    //             }catch(err){
+    //                 alert(err)
+    //             }
+    //         },
+    //         [history],
+    //     )
+
     return(
         <section>
             <h1 className="header1"> College Social Network </h1>
