@@ -7,6 +7,8 @@ import SignUp from './components/pages/signUp'
 import SignIn from './components/pages/signIn'
 import HomePage from './components/pages/homePage'
 import NotFound from './components/pages/notFound'
+import Chat from './components/Chat/Chat';
+import Join from './components/Join/join';
 
 
 function App() {
@@ -17,7 +19,9 @@ function App() {
           <Route exact path="/" component={SignUp} />
           <Route path="/signin" component={SignIn} />
           <Route path="/home" component={HomePage} />
-          <Route component={NotFound} />
+          <Route path="/inbox" component={Join} />
+          <Route path="/chat" component={Chat} />
+           <Route component={NotFound} />
         </Switch>
       </Router>
     </div>
