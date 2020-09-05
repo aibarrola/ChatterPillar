@@ -3,30 +3,28 @@ import './signUp.css'
 import {Link} from 'react-router-dom'
 import M from 'materialize-css'
 import axios from 'axios'
+import { useState } from "react";
 
+function Signup(){
 
-function signup(){
+    const[firstName,setFirstName] = useState("");
+    const[lastName, setLastName] = useState("");
+    const[password, setPassword] = useState("");
+    const[email, setEmail] = useState("");
+    const[bio, setBio] = useState("");
 
-    // const SignUp = ({history}) => {
-    //     const handleSignUp = useCallback(
-    //         async event => {
-    //             event.preventDefault();
-    //             const {f_name, l_name, email, password} = event.target.elements;
-    //             try{
-    //                 await app
-    //                 .auth()
-    //                 .createUserWithEmailAndPassword(email.value, password.value).then(
-    //                     (res) => {
-    //                         console.log(res.user)
-    //                     }
-    //                 );
-    //                 history.push("/home");
-    //             }catch(err){
-    //                 alert(err)
-    //             }
-    //         },
-    //         [history],
-    //     )
+   const handleSubmit = e =>{
+    e.preventDefault();
+    const user = {
+        firstName : firstName,
+        lastName : lastName,
+        email : email,
+        password  : password,
+        bio : bio
+    }
+
+    console.log(user);
+    }
 
     return(
         <section>
@@ -35,35 +33,35 @@ function signup(){
             <div className="signUpContainer">
                 <h2 className="header2"> Register </h2>
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" onSubmit ={handleSubmit}>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="first_name" type="text" class="validate" />
+                                <input id="first_name" type="text" class="validate" onChange={e => setFirstName(e.target.value)} />
                                 <label for="first_name">First Name</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate" />
+                                <input id="last_name" type="text" class="validate" onChange={e => setLastName(e.target.value)}/>
                                 <label for="last_name">Last Name</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="password" type="password" class="validate" />
+                                <input id="password" type="password" class="validate" onChange={e => setPassword(e.target.value)}/>
                                 <label for="password">Password</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s12">
-                            <input id="email" type="email" class="validate" />
+                            <input id="email" type="email" class="validate" onChange={e => setEmail(e.target.value)} />
                             <label for="email">Email</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s12">
-                            <textarea id="bio" class="materialize-textarea"></textarea>
+                            <textarea id="bio" class="materialize-textarea" onChange={e => setBio(e.target.value)}></textarea>
                             <label for="textarea1">Bio</label>
                             </div>
                         </div>
@@ -87,4 +85,4 @@ function signup(){
 }
 
 
-export default signup;
+export default Signup;
