@@ -1,0 +1,13 @@
+.postList{
+    text-align:center;
+}
+
+.post{
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.post-author{
+    margin-left: 80%;
+}

@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+
 
 
 function signin(){
@@ -28,6 +30,8 @@ function signin(){
                     <button class="btn black waves-effect waves-light" type="submit" name="action"> Login
                         <i class="material-icons right"></i>
                     </button>
+                    <Link class="btn-flat" to="/home"> Continue as Guest </Link>
+
 
                   
                 </form>
