@@ -31,7 +31,7 @@ render(){
     return(
         <section>
             <div className="postList">
-                <h1> Feed </h1>
+                <h1> Critter Feed </h1>
                 {this.postList()}
             </div>
         

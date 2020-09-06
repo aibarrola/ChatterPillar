@@ -34,7 +34,10 @@ function Signin(){
 
     return(
         <section>
-        <h1 className="header1"> College Social Network </h1>
+            <span class="center deep-purple lighten-2 container">
+                <h1 className="header1"> ChatterPillar </h1>
+
+            </span>
 
         <div className="signUpContainer">
             <h2 className="header2"> Login </h2>

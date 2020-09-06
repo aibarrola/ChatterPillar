@@ -6,6 +6,7 @@ import TextContainer from '../TextContainer/TextContainer';
 import Messages from '../Messages/Messages';
 import InfoBar from '../InfoBar/InfoBar';
 import Input from '../Input/Input';
+import Navbar from '../navbar'
 
 import './Chat.css';
 
@@ -53,14 +54,22 @@ const Chat = ({ location }) => {
   }
 
   return (
-    <div className="outerContainer">
+    <section>
+      <Navbar />
       <div className="container">
+      <div className="col s12">
           <InfoBar room={room} />
           <Messages messages={messages} name={name} />
           <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
-      <TextContainer users={users}/>
+      <div class="row col s12">
+    
+        <TextContainer users={users}/>
+
+      </div>
     </div>
+    </section>
+    
   );
 }
 

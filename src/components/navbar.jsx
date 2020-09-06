@@ -8,13 +8,13 @@ function Navbar(){
     }
    
     return(
-        <section>
+        <section >
             <nav class="navbar">
                 <div class="nav-wrapper">
-                <a href="/home" class="brand-logo">College Social Network</a>
+                <a href="/home" class="brand-logo">ChatterPillar</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/home">Feed</a></li>
-                    <li><a href="/inbox">Chat Room</a></li>
+                    <li><a href="/home">Critter Feed</a></li>
+                    <li><a href="/inbox">Critter Chat</a></li>
                     <li><a href="/signin" onClick = {handleLogout}>Logout</a></li>
                 </ul>
                 </div>
