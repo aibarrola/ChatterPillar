@@ -35,7 +35,7 @@ function Signin(){
     return(
         <section>
             <span class="center deep-purple lighten-2 container">
-                <h1 className="header1"> ChatterPillar </h1>
+                <h1 className="header1"> Chatterpillar </h1>
 
             </span>
 

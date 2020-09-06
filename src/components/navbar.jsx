@@ -11,7 +11,7 @@ function Navbar(){
         <section >
             <nav class="navbar">
                 <div class="nav-wrapper">
-                <a href="/home" class="brand-logo">ChatterPillar</a>
+                <a href="/home" class="brand-logo">Chatterpillar</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="/home">Critter Feed</a></li>
                     <li><a href="/inbox">Critter Chat</a></li>
