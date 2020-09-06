@@ -1,4 +1,4 @@
-# Reconnector
+# ChatterPillar
 A hackathon project to connect with fellow critters with a feed and chatrooms 
 
 Check out Devpost [here](https://devpost.com/software/chatterpillar)
