@@ -1,6 +1,7 @@
 # Reconnector
 A hackathon project to connect with fellow critters with a feed and chatrooms 
-[Devpost](https://devpost.com/software/chatterpillar)
+
+Check out Devpost [here](https://devpost.com/software/chatterpillar)
 
 
 ## Available Scripts
