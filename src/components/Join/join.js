@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import Navbar from '../navbar'
 
 import './join.css';
 
@@ -8,6 +9,8 @@ export default function SignIn() {
   const [room, setRoom] = useState('');
 
   return (
+  <section>
+    <Navbar />
     <div className="joinOuterContainer">
       <div className="joinInnerContainer">
         <h1 className="heading">Chat Now</h1>
@@ -22,5 +25,6 @@ export default function SignIn() {
         </Link>
       </div>
     </div>
+    </section>
   );
 }
